@@ -12,10 +12,141 @@
 }
 body{
     text-align: center;
-    margin-top: 0;
     margin-bottom: 32px;
+    margin: 0;
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
 
 
+}
+/* LOGIN PAGE CSS STYLES  */
+.login{
+    display: grid;
+    place-items: center;
+
+    width: 100%;
+    height: 100vh;
+    
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    
+
+    width: 40%;
+}
+.logo{
+    align-self: center;
+
+    width: 150px;
+
+    margin-bottom: 48px;
+    display: none; 
+}
+.title{
+    margin-bottom: 12px;
+
+    text-align: center;
+    font-size: var(--lg);
+    
+    
+}
+.subtitle{
+    margin-top: 0;
+    margin-bottom: 32px;
+
+    color: var(--very-light-pink);
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    align-self: flex-start;
+
+    margin-bottom: 4px;
+
+    font-size: var(--sm);
+    font-weight: bold;
+}
+input{
+    height: 32px;
+
+    margin-bottom: 12px;
+    padding: 6px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: var(--text-input-field);
+    font-size: var(--md);
+    
+}
+.primary-button{
+    width: 100%;
+    height: 44px;
+
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+
+    color: var(--white);
+    font-size: var(--md);
+    font-weight: bold;
+
+    cursor: pointer;
+}
+.login-button{
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+@media (max-width: 640px){
+    .logo{
+        display: block;
+    }
+}
+@media (min-width: 720px){
+    .form-container{
+        width: 25%;
+    }
+}
+
+/* EMAIL SENT PAGE STYLES */
+.email-image-container{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+.email-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 132px;
+    height: 132px;
+
+    margin-top: -2px;
+    margin-bottom: 30px;
+
+    border-radius: 50%;
+
+    background-color: var(--text-input-field);
+}
+.email-image img{
+    width: 60%;
+}
+.resend{
+    margin-top: 24px;
+
+    font-size: var(--sm);
+    font-weight: bold;
+}
+.resend span{
+    color: var(--very-light-pink);
+}
+.resend a{
+    color: var(--hospital-green);
+    text-decoration: none;
 }
