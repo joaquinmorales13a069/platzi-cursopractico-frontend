@@ -185,3 +185,13 @@ input{
     align-self: flex-start;
     margin-bottom: 50px;
 }
+
+/* EDIT ACCOUNT PAGE STYLES */
+.value{
+    align-self: flex-start;
+
+    width: 100%;
+
+    color: var(--very-light-pink);
+    font-size: var(--md);
+}
