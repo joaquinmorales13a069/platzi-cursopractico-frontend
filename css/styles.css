@@ -195,3 +195,65 @@ input{
     color: var(--very-light-pink);
     font-size: var(--md);
 }
+
+/* INDEX PAGE STYLES */
+.cards-container{
+    --card-size: 140px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card-size));
+    place-content: center;
+
+    gap: 26px;
+}
+.product-card{
+    width: var(--card-size);
+}
+.product-card img{
+    width: 100%;
+    height: 140px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+}
+.product-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-info div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.product-info div p:nth-child(1){
+    margin-top: 16px;
+    margin-bottom: 4px;
+
+   font-weight: bold;
+   font-size: var(--md); 
+}
+.product-info div p:nth-child(2){
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+   color: var(--very-light-pink);
+   font-size: var(--sm); 
+
+}
+.product-info figure{
+    margin: 0;
+}
+.product-info figure img{
+    width: 35px;
+    height: 35px;
+}
+@media (min-width: 640px){
+    .cards-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 240px);
+    }
+    .product-card{
+        width: 240px;
+    }
+}
