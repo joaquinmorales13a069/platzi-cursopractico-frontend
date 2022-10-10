@@ -179,3 +179,9 @@ input{
         margin-top: 90px;
     }
 }
+
+/* CREATE ACCOUNT PAGE STYLES */
+.title-left{
+    align-self: flex-start;
+    margin-bottom: 50px;
+}
