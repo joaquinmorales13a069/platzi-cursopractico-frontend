@@ -292,3 +292,40 @@ input{
     font-size: var(--sm);
     font-weight: bold;
 }
+/* MOBILE MENU STYLES */
+.mobile-menu{
+    padding: 24px;
+}
+.mobile-menu ul{
+    padding: 0;
+    margin: 24px 0 0;
+
+    list-style: none;
+}
+.mobile-menu ul:nth-child(1){
+    border-bottom: 1px solid var(--very-light-pink);
+}
+.mobile-menu ul:nth-child(3){
+    margin-top: 200px;
+}
+
+.mobile-menu ul li{
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+.mobile-menu a{
+
+    color: var(--black);
+    text-decoration: none;
+
+    font-weight: bold;  
+}
+.email{
+    font-size: var(--sm);
+    font-weight: lighter !important;
+}
+.sign-out{
+    font-size: var(--sm);
+    color: var(--hospital-green) !important;
+}
