@@ -257,3 +257,38 @@ input{
         width: 240px;
     }
 }
+
+/* DESKTOP MENU STYLES */
+.desktop-menu{
+    width: 100px;
+    height: auto;
+    padding: 15px;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+}
+.desktop-menu ul{
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: end;
+}
+.desktop-menu ul li{
+    margin-bottom: 15px;
+}
+.desktop-menu ul li a{
+    color: var(--black);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.desktop-menu ul li:last-child{
+    padding-top: 15px;
+    border-top: 1px solid var(--very-light-pink);
+}
+.desktop-menu ul li:last-child a{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    font-weight: bold;
+}
