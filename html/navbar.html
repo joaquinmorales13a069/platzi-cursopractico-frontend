@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <title>Navbar Mockup Page</title>
+
+    <style>
+        body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+    }
+        :root{
+        --very-light-pink:#C7C7C7;
+        --text-input-field: #F7F7F7;
+        --hospital-green: #ACD9B2;
+        --white: #FFFFFF;
+        --black: #000000;
+        --dark: #232830;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+
+            width: 100%;
+            height: 60px;
+            
+        }
+        .menu{
+            display: none;
+        }
+        
+        .navbar-left{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            width: 70%;
+        }
+        .logo{
+            width: 150px;
+        }
+        .navbar-left ul{
+            display: flex;
+            align-items: center;
+            gap: 0 20px;
+
+            margin-top: 24px;
+            margin-left: 12px;
+            padding: 0;
+
+            list-style: none; 
+        }
+        .navbar-left ul li a{
+            border: 1px solid var(--white);
+            padding: 8px;
+            border-radius: 8px;
+
+            text-decoration: none;
+            color: var(--very-light-pink);
+            font-size: var(--md);
+            font-weight: bold;
+            
+            
+        }
+        .navbar-left ul li a:hover{
+
+            border: 1px solid var(--hospital-green);
+
+            color: var(--hospital-green);
+        }
+        .navbar-right{
+            display: flex;
+            align-items: center;
+            
+        }
+        .navbar-right p span{
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+        }
+        @media (max-width: 990px){
+            .menu{
+                display: block;
+
+                width: 25px;
+
+                margin-left:15px;
+            }
+            .navbar-left ul{
+                display: none;
+            }
+            .logo{
+                justify-content: center;
+            }
+            .navbar-right p span {
+        display: none;
+      }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="../icons/icon_menu.svg" alt="Menu" class="menu">
+        
+        <div class="navbar-left">
+            <img src="../logos/logo_yard_sale.svg" alt="logo" class="logo">
+            <ul class="menu-items">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Clothes</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Furniture</a></li>
+                <li><a href="#">Toys</a></li>
+                <li><a href="#">Others</a></li>
+            </ul>
+        </div>
+
+        <div class="navbar-right">
+            <p>
+                <span>joaquinmorales@email.com</span>
+            </p>
+            <figure>
+                <img src="../icons/icon_shopping_cart.svg" alt="shopping cart">
+            </figure>
+        </div>
+    </nav>
+</body>
+</html>
